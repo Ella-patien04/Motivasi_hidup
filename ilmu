@@ -1,0 +1,25 @@
+import time
+
+def tampilkan_kalimat_kata_per_huruf():
+    kalimat = """
+
+Ilmu itu cahaya yang menerangi langkah, membuka pintu kebijaksanaan, 
+dan membebaskan dari kebodohan. Tanpa ilmu seseorang bagaikan kapal tanpa kompas, 
+mudah tersesat dalam gelombang kehidupan. Dengan ilmu kita bisa memahami hakikat
+dunia, menjalani hidup dengan bijak, dan memberi manfaat bagi sesama. Maka jangsn 
+pernah lelah mencari ilmu, sebab ia adalah bekal yang tak akan habis, penerang yang tak 
+ akan padam, dan warisan yang nilai nya lebih berharga daripada harta
+    """
+    for huruf in kalimat:
+        print(huruf, end='', flush=True)
+        time.sleep(0.05) # penundaan 0.05 detik per huruf
+
+def main():
+    jumlah_ulang = 1 # set jumlah pengulangan kalimat
+    for i in range(jumlah_ulang):
+            tampilkan_kalimat_kata_per_huruf()
+            time.sleep(1) # penundaan 1 detik sebelum pengulangan
+            print('\n' + '-' * 40) # pemisah antar pengulangan
+
+# memanggil fungsi main untuk menjalankan program
+main()

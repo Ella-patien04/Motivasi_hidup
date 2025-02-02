@@ -1,0 +1,23 @@
+import time 
+
+def tampilkan_kalimat_kata_per_huruf():
+    kalimat = """
+
+Selamat ulang tahun orang baik, semoga di umur yang bertambah ini 
+kamu tetap akan selalu menjadi orang baik dimanapun kapanpun dan 
+kepada siapaun. sukses selalu orang baik.
+    """
+    for huruf in kalimat:
+        print(huruf, end='', flush=True)
+        time.sleep(0.05) # penundaan 0.05 detik per huruf
+
+def main():
+    jumlah_ulang = 1 # set jumlah pengulangan kalimat
+    for i in range(jumlah_ulang):
+            tampilkan_kalimat_kata_per_huruf()
+            time.sleep(1) # penundaan 1 detik sebelum pengulangan
+            print('\n' + '-' * 40) # pemisah antar pengulangan
+
+# memanggil fungsi main untuk menjalankan program
+main()
+
